@@ -239,4 +239,92 @@ a svg{
     display: block;
 }
 
+
+.eligibility{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding: 30px 0px;
+    align-items: center;
+    
+}
+
+.imges{
+ background-color: #ebe3fe;
+border-radius: 10px;
+}
+
+.imges img{
+    padding: 10px 10px;
+    
+}
+
+
+.requirmnts{
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.requirmnts p:nth-child(1){
+        color:  var(--background-color);
+    font-size: var( --font-size4);
+    font-weight: 700;
+}
+
+
+.main-mark{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.markgood {
+    display: flex;
+    align-items: flex-start;   
+    gap: 30px;
+    
+}
+
+.markgood span:first-child {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.markgood span:first-child svg {
+    font-size: 40px;
+    color: #12b996;
+    display: block;
+}
+
+.markgood div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.markgood div span:nth-child(1){
+    font-weight: 600;
+    font-size: var( --font-size3);
+}
+.markgood div span:nth-child(2){
+    font-weight: 100;
+    font-size: var( --font-size5);
+}
+
+.btn{
+    padding: 20px 0px;
+}
+.btn button{
+  padding: 15px 25px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--background-color1);
+  color: var( --smoke-color);
+  cursor: pointer;
+  font-size: var(--font-size3);
+}
+
 `

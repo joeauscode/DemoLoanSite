@@ -8,6 +8,8 @@ import { CiWallet } from "react-icons/ci";
 import { BiSolidBusiness } from "react-icons/bi";
 import eligibility from '../assets/images/eleigibility.jpg'
 
+import { GrStatusGood } from "react-icons/gr";
+
 
 
 
@@ -98,23 +100,47 @@ const Homepage = () => {
         <div>
 
      <div className="eligibility">
-        <div>
+        <div className='imges'>
         <img src={eligibility} alt="Eligibility" />
         </div>
 
-        <div>
-         <span>REQUIREMENTS</span>
+        <div className='requirmnts'>
+         <p>REQUIREMENTS</p>
          <h1>Are You Eligible?</h1>
          <p>Meet these simple criteria to get started</p>
-         <div>
-            <div>
-             <span></span>
-             <p>
+         <div className='main-mark'>
+            <div className='markgood'>
+             <span><GrStatusGood/></span>
+             <div>
                 <span>Age 18 or Above</span>
                 <span>You must be at least 18 years old to apply for any loan product</span>
-             </p>
+             </div>
             </div>
 
+            <div className='markgood'>
+             <span><GrStatusGood/></span>
+             <div>
+                <span>Stable Income Source</span>
+                <span>Regular employment or business income to ensure repayment capability</span>
+             </div>
+            </div>
+            <div className='markgood'>
+             <span><GrStatusGood/></span>
+             <div>
+                <span>Valid Identification</span>
+                <span>Government-issued ID such as passport, driver's license, or national ID</span>
+             </div>
+            </div>
+            <div className='markgood'>
+             <span><GrStatusGood/></span>
+             <div>
+                <span>No Credit Check Required</span>
+                <span>We don't require credit score checks, making our loans accessible to everyone</span>
+             </div>
+            </div>
+            <div className="btn">
+                <button>Check Eligibility Now</button>
+            </div>
          </div>
         </div>
 
