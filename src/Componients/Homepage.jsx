@@ -9,6 +9,8 @@ import { BiSolidBusiness } from "react-icons/bi";
 import eligibility from '../assets/images/eleigibility.jpg'
 
 import { GrStatusGood } from "react-icons/gr";
+import Calculate from './Calculate'
+import Stafflogin from './Stafflogin'
 
 
 
@@ -142,10 +144,18 @@ const Homepage = () => {
                 <button>Check Eligibility Now</button>
             </div>
          </div>
+          
         </div>
 
         </div> 
+
+        <div className="calculate">
+           <Calculate />
+           <Stafflogin />
         </div>
+       
+        </div>
+        
    
         
     </Home>

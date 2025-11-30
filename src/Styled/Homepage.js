@@ -318,7 +318,7 @@ border-radius: 10px;
     padding: 20px 0px;
 }
 .btn button{
-  padding: 15px 25px;
+  padding: 20px 25px;
   border: none;
   border-radius: 10px;
   background-color: var(--background-color1);
