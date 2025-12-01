@@ -4,18 +4,28 @@ import { IoHomeOutline } from "react-icons/io5";
 
 
 const Nav = () => {
+
+
+  const Gotoabout = () => {
+    window.location.href = '/about-us'
+  }
+  const Gotohome = () => {
+    window.location.href = '/'
+  }
+
+
   return (
     <Navbar>
         
         <div className="main">
-        <div className="left">
+        <div className="left" onClick={Gotohome}>
             <span><IoHomeOutline/></span>
             <span>IronOak Loan</span>
         </div>
       
             <ul className="right">
-                <li>Home</li>
-                <li>About Us</li>
+                <li onClick={Gotohome}>Home</li>
+                <li onClick={Gotoabout}>About Us</li>
                 <li>Services</li>
                 <li>Contact</li>
                 <li><button>Apply Now</button></li>

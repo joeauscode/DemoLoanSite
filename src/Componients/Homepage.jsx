@@ -11,6 +11,7 @@ import eligibility from '../assets/images/eleigibility.jpg'
 import { GrStatusGood } from "react-icons/gr";
 import Calculate from './Calculate'
 import Stafflogin from './Stafflogin'
+import Footer from './Footer'
 
 
 
@@ -152,9 +153,11 @@ const Homepage = () => {
         <div className="calculate">
            <Calculate />
            <Stafflogin />
+           <Footer/>
         </div>
        
         </div>
+        
         
    
         
