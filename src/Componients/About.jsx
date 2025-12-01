@@ -11,7 +11,7 @@ import male from '../assets/images/male.jpg'
 import famle from '../assets/images/famele.jpg'
 import mail from '../assets/images/mail.jpg'
 
-
+import Footer from './Footer'
 
 
 
@@ -146,19 +146,19 @@ const About = () => {
     <div>
         <img src={mail} alt="mail" />
         <p>Michael Anderson</p>
-        <span>Chief Executive Officer</span>
+        <span className='span'>Chief Executive Officer</span>
         <span>20+ years in financial services, former VP at major banking institution</span>
     </div>
     <div>
         <img src={famle} alt="famle" />
         <p>Sarah Thompson</p>
-        <span>Chief Financial Officer</span>
+        <span className='span'>Chief Financial Officer</span>
         <span>Expert in risk management and financial strategy with 15+ years experience</span>
     </div>
     <div>
         <img src={male} alt="male" />
         <p>Michael Anderson</p>
-        <span>Chief Technology Officer</span>
+        <span className='span'>Chief Technology Officer</span>
         <span>Fintech innovator driving digital transformation in lending industry
 
 </span>
@@ -173,13 +173,14 @@ const About = () => {
    <div className="read-main">
     <h1>Ready to Get Started?</h1>
     <p>Join thousands of satisfied customers who trust LoanHub for their financial needs</p>
-    <div>
+    <div className='btns'>
     <button>Apply Now</button>
     <button>Contact Us</button>
     </div>
    </div>
 
 </div>
+<Footer/>
 
         
     </Aboutus>

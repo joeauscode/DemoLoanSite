@@ -311,8 +311,45 @@ padding: 50px 20px;
  border-top-left-radius: 10px;
 }
 
+.span{
+  color: var(  --background-color);
+  font-weight: 900;
+}
+
+.ready{
+  background-color: #f8f6f3;
+}
+.read-main{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 0px;
+  text-align: center;
+}
 
 
+.btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.btns button{
+  padding: 15px 40px;
+  font-size: var(--font-size1);
+  cursor: pointer;
+  border: none;
+  color: var( --smoke-color);
+  border-radius: 10px;
+}
+
+.btns button:nth-child(1){
+  background-color: var( --background-color);
+}
+.btns button:nth-child(2){
+  background-color: var( --background-color1);
+}
 
 
 @media (max-width: 1000px) {
