@@ -5,6 +5,8 @@ import { FaArrowRight } from "react-icons/fa";
 import { RiSecurePaymentLine } from "react-icons/ri";
 import { MdOutlineAccessTime } from "react-icons/md";
 import { VscWorkspaceTrusted } from "react-icons/vsc";
+import { FaRegFolderOpen } from "react-icons/fa";
+
 
 
 
@@ -32,11 +34,12 @@ const Stafflogin = () => {
             </div>
 
             <div className='secondiv'>
+                <span className='myicon'><FaRegFolderOpen/></span>
                 <p>Ready to Apply?</p>
                 <span>Start your loan application now. Simple process, quick approval, funds in 24 hours</span>
                     <button>Start Application <FaArrowRight/></button>
 
-                    <div>
+                    <div className='icons'>
                         <span><RiSecurePaymentLine/> Secure</span>
                         <span><MdOutlineAccessTime/> Fast</span>
                         <span><VscWorkspaceTrusted/> Trusted</span>
