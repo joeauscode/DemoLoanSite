@@ -12,6 +12,9 @@ const Nav = () => {
   const Gotohome = () => {
     window.location.href = '/'
   }
+  const Gotocontact = () => {
+    window.location.href = '/contact-us'
+  }
 
 
   return (
@@ -27,7 +30,7 @@ const Nav = () => {
                 <li onClick={Gotohome}>Home</li>
                 <li onClick={Gotoabout}>About Us</li>
                 <li>Services</li>
-                <li>Contact</li>
+                <li onClick={Gotocontact}>Contact</li>
                 <li><button>Apply Now</button></li>
             </ul>
      
