@@ -15,6 +15,9 @@ const Nav = () => {
   const Gotocontact = () => {
     window.location.href = '/contact-us'
   }
+  const Gotoapply = () => {
+    window.location.href = '/apply-loan'
+  }
 
 
   return (
@@ -31,7 +34,7 @@ const Nav = () => {
                 <li onClick={Gotoabout}>About Us</li>
                 <li>Services</li>
                 <li onClick={Gotocontact}>Contact</li>
-                <li><button>Apply Now</button></li>
+                <li onClick={Gotoapply}><button>Apply Now</button></li>
             </ul>
      
         </div>
