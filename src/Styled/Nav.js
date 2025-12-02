@@ -14,12 +14,13 @@ position: fixed;
 width: 100%;
 padding: 20px 0px;
 font-family: var(--font-family);
-  background: linear-gradient(to left,                  
+  /* background: linear-gradient(to left,                  
     rgba(0, 0, 0, 0.9), 0%,       
     rgba(0, 0, 0, 0.5) 50%,        
     var(--background-color1) 100%  
-  );
-
+  ); */
+ background-color: var( --background-color1);
+ z-index: 9999;
 .main{
     display: flex;
     width: 90%;
@@ -106,7 +107,7 @@ svg{
 
 .mobiles{
     display: flex;
- background-color: var( --background-color1);
+
     width: 100%;
     justify-content: center;
     align-items: center;

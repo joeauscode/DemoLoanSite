@@ -74,7 +74,7 @@ const Contact = () => {
            <span className='iconss'><FaRegEnvelope/></span>
             <div className='itmes'>
                 <span>Email</span>
-                <span>info@eLoanHub.com</span>
+                <span>support@eloanhub.com</span>
                 <span>We'll respond within 24 hours</span>
             </div>
           </div>

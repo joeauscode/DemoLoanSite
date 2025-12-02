@@ -186,12 +186,7 @@ button{
       gap: 10px;
     }
 
-    .myinputclick {
-      display: flex;
-      flex-direction: row;
-    
-    }
-
+   
     .Loanype {
       flex-direction: column;
       align-items: flex-start;

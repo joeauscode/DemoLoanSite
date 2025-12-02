@@ -84,7 +84,7 @@ const handleSubmit = async (e) => {
     <ul>
       <li>Get in Touch</li>
       <li className='call'><MdAddCall/> +1 (416) 475-7556</li>
-      <li className='message'><FaRegEnvelope/> info@eLoanHub.com</li>
+      <li className='message'><FaRegEnvelope/> support@eloanhub.com</li>
       <li className='location'><CiLocationOn/> 401 Bay St. 16th floor, Toronto, ON M5H 2Y4</li>
 
     </ul>

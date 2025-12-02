@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import {Apply} from '../Styled/Applynow'
 import { IoMdPerson } from "react-icons/io";
 import { BiMessageAltDetail } from "react-icons/bi";
@@ -27,6 +27,25 @@ const Applynow = () => {
     .then(data => alert(data.message))
     .catch(err => console.error(err));
   };
+
+
+
+
+const dateRef = useRef(null);
+
+useEffect(() => {
+  const defaultDate = "1986-09-09";
+  if (dateRef.current) dateRef.current.value = defaultDate;
+}, []);
+
+const openPicker = () => {
+  if (dateRef.current?.showPicker) {
+    dateRef.current.showPicker();
+  } else {
+    dateRef.current?.focus();
+    dateRef.current?.click();
+  }
+};
 
 
 
@@ -118,7 +137,20 @@ const Applynow = () => {
 <div className='Loanype'>
     <div className='LoanType'>
     <label htmlFor="">Date of Birth *</label>
-    <input type="date" name="dob" id="dob" placeholder='DOB' required/>
+    <div className="LoanType">
+  <label>Date of Birth *</label>
+<input
+  type="date"
+  name="dob"
+  id="dob"
+  ref={dateRef}
+
+  required
+/>
+
+
+</div>
+
 </div>
 <div className='LoanType'>
     <label htmlFor="">ID Number *</label>
