@@ -332,24 +332,32 @@ border-radius: 10px;
 
 
 @media (max-width: 850px) {
+
+    .main{
+        width: 100%;
+    }
   .section {
     padding: 4rem 1rem;
+    width: 100%;
   }
 
   .trusted {
-    flex-direction: column;
+     margin-block: 2rem;
     gap: 5px;
     padding: 8px 12px;
   }
 
   .trusted span:nth-child(2) {
     font-size: var(--font-size5);
+   
   }
+ 
 
   .fast {
     font-size: 24px;
     line-height: 40px;
     margin-top: 0.5rem;
+    color: var( --background-color);
   }
 
   .Tailored {
@@ -376,6 +384,8 @@ border-radius: 10px;
 
   .nohiddenfess {
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 15px;
     font-size: var(--font-size5);
   }
@@ -404,6 +414,10 @@ border-radius: 10px;
   }
 
   .imges {
+    width: 100%;
+  }
+
+  .imges img{
     width: 100%;
   }
 
