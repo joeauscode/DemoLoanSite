@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef } from 'react'
 import {Home} from '../Styled/Homepage'
 import { RiSecurePaymentLine } from "react-icons/ri";
 import { FaArrowRight, FaChartLine } from "react-icons/fa6";
@@ -24,7 +24,20 @@ import Footer from './Footer'
 
 
 const Homepage = () => {
+  const calculateRef = useRef(null);
 
+  const scrollToCalculate = () => {
+    if (calculateRef.current) {
+      calculateRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+
+    const gotoapplyloan = () => {
+    window.location.href = '/apply-loan'
+  }
+
+ 
   return (
     <Home>
     <div className="main">
@@ -47,8 +60,8 @@ const Homepage = () => {
          </div>
 
          <div className="buttons">
-            <button>Apply Now <FaArrowRight/></button>
-            <button><FaCalculator /> Calculate Your Loan</button>
+            <button type='button' onClick={gotoapplyloan}>Apply Now <FaArrowRight/></button>
+            <button onClick={scrollToCalculate}><FaCalculator /> Calculate Your Loan</button>
          </div>
 
          <div className="nohiddenfess">
@@ -142,7 +155,7 @@ const Homepage = () => {
              </div>
             </div>
             <div className="btn">
-                <button>Check Eligibility Now</button>
+                <button onClick={gotoapplyloan} type='button'>Check Eligibility Now</button>
             </div>
          </div>
           
@@ -150,7 +163,7 @@ const Homepage = () => {
 
         </div> 
 
-        <div className="calculate">
+        <div className="calculate" ref={calculateRef}>
            <Calculate />
            <Stafflogin />
            <Footer/>

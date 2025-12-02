@@ -20,12 +20,20 @@ import Footer from './Footer'
 
 const About = () => {
 
+            const gotoapplyloan = () => {
+    window.location.href = '/apply-loan'
+  }
+            const gotocontact = () => {
+    window.location.href = '/contact-us'
+  }
+
+
   return (
     <Aboutus>
 
 <div className="main-about">
-<h1>About IronOka Loan</h1>
-<p>Empowering financial dreams since 2020 with transparent, fast, and customer-focused lending solutions</p>
+<h1>About eLoanHub</h1>
+<p>Empowering financial dreams since 2015 with transparent, fast, and customer-focused lending solutions</p>
 </div>
 
 <div className="about-body">
@@ -35,9 +43,9 @@ const About = () => {
     <div>
         <span>OUR STORY</span>
         <h1>Building Trust Through Excellence</h1>
-       <p>Founded in 2020, LoanHub was born from a simple vision: to make lending accessible, transparent, and customer-centric. We recognized that traditional lending institutions often created barriers that prevented hardworking individuals and businesses from accessing the capital they needed to thrive.</p>
+       <p>Founded in 2015, eLoanHub was born from a simple vision: to make lending accessible, transparent, and customer-centric. We recognized that traditional lending institutions often created barriers that prevented hardworking individuals and businesses from accessing the capital they needed to thrive.</p>
        <p>Our founders, with over 50 years of combined experience in financial services, set out to revolutionize the lending industry by leveraging technology and maintaining a human touch. Today, we've helped over 50,000 customers achieve their financial goals, from buying their first home to expanding their businesses.</p>
-       <p>At LoanHub, we believe that everyone deserves access to fair and competitive financing. That's why we've streamlined our processes, eliminated hidden fees, and committed to providing exceptional customer service at every step of your journey.</p>
+       <p>At eLoanHub, we believe that everyone deserves access to fair and competitive financing. That's why we've streamlined our processes, eliminated hidden fees, and committed to providing exceptional customer service at every step of your journey.</p>
 
     </div>
 
@@ -172,14 +180,15 @@ const About = () => {
 <div className="ready">
    <div className="read-main">
     <h1>Ready to Get Started?</h1>
-    <p>Join thousands of satisfied customers who trust LoanHub for their financial needs</p>
+    <p>Join thousands of satisfied customers who trust eLoanHub for their financial needs</p>
     <div className='btns'>
-    <button>Apply Now</button>
-    <button>Contact Us</button>
+    <button onClick={gotoapplyloan}>Apply Now</button>
+    <button onClick={gotocontact}>Contact Us</button>
     </div>
    </div>
 
 </div>
+
 <Footer/>
 
         

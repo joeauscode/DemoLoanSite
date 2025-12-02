@@ -47,7 +47,7 @@ const Contact = () => {
            <span className='iconss'><MdAddIcCall/></span>
             <div className='itmes'>
                 <span>Phone</span>
-                <span>+1 (555) 123-4567</span>
+                <span>+1 (416) 475-7556</span>
                 <span>Mon-Fri, 9 AM - 6 PM EST</span>
             </div>
           </div>
@@ -56,7 +56,7 @@ const Contact = () => {
            <span className='iconss'><FaRegEnvelope/></span>
             <div className='itmes'>
                 <span>Email</span>
-                <span>info@loanhub.com</span>
+                <span>info@eLoanHub.com</span>
                 <span>We'll respond within 24 hours</span>
             </div>
           </div>

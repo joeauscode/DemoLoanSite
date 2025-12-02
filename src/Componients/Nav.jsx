@@ -26,7 +26,7 @@ const Nav = () => {
         <div className="main">
         <div className="left" onClick={Gotohome}>
             <span><IoHomeOutline/></span>
-            <span>IronOak Loan</span>
+            <span>eLoanHub</span>
         </div>
       
             <ul className="right">

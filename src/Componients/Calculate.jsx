@@ -3,8 +3,13 @@ import {Calculat} from '../Styled/Calculate'
 import { IoStar } from "react-icons/io5";
 
 
+
 const Calculate = () => {
 
+
+  const gotoapplyloan = () => {
+    window.location.href = '/apply-loan'
+  }
 
   // ---- Inputs ----
   const APR = 3.0;
@@ -122,7 +127,7 @@ const Calculate = () => {
         <p>Total Interest: <strong>${results.interest}</strong></p>
         <p>Total Amount: <strong>${results.total}</strong></p>
         <p>APR: <strong>{APR}%</strong></p>
-         <button>Apply for This Loan</button>
+         <button type="submit" onClick={gotoapplyloan}>Apply for This Loan</button>
         </div>
        
 
@@ -175,7 +180,7 @@ const Calculate = () => {
         <span><IoStar/></span>
       </div>
 
-      <h4>"Best rates I could find anywhere! I compared multiple lenders and LoanHub offered the most competitive interest rate with no hidden fees. The transparency throughout the process gave me complete peace of mind. Excellent service from start to finish."</h4>
+      <h4>"Best rates I could find anywhere! I compared multiple lenders and eLoanHub offered the most competitive interest rate with no hidden fees. The transparency throughout the process gave me complete peace of mind. Excellent service from start to finish."</h4>
       <div className="main-sm">
         <span className="sm">JC</span>
         <div>
@@ -194,7 +199,7 @@ const Calculate = () => {
         <span><IoStar/></span>
       </div>
 
-      <h4>"Getting our mortgage through LoanHub was the smoothest experience. They guided us through every step, explained all the paperwork clearly, and made buying our first home stress-free. We couldn't have asked for a better lending partner!"</h4>
+      <h4>"Getting our mortgage through eLoanHub was the smoothest experience. They guided us through every step, explained all the paperwork clearly, and made buying our first home stress-free. We couldn't have asked for a better lending partner!"</h4>
       <div className="main-sm">
         <span className="sm">EP</span>
         <div>

@@ -22,7 +22,7 @@ const Footer = () => {
 
      <div className='homename'>
       <span><IoHomeOutline/></span>
-      <span>IronOka Loan</span>
+      <span>eLoanHub</span>
      </div>
      <p className='Empowering'>Empowering your financial future</p>
      <div className='inputs'>
@@ -59,8 +59,8 @@ const Footer = () => {
 
     <ul>
       <li>Get in Touch</li>
-      <li className='call'><MdAddCall/> +1 (555) 123-4567</li>
-      <li className='message'><FaRegEnvelope/> info@loanhub.com</li>
+      <li className='call'><MdAddCall/> +1 (416) 475-7556</li>
+      <li className='message'><FaRegEnvelope/> info@eLoanHub.com</li>
       <li className='location'><CiLocationOn/> 123 Financial Street  New York, NY 10001</li>
 
     </ul>
@@ -74,7 +74,7 @@ const Footer = () => {
 
        <div className="reserved">
         <div>
-          <span>© 2025 LoanHub. All rights reserved.</span>
+          <span>© 2025 eLoanHub. All rights reserved.</span>
         </div>
 
         <div>
@@ -84,7 +84,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <span>Powered by IronOak</span>
+          <span>Powered by eLoanHub</span>
         </div>
        </div>
 

@@ -17,6 +17,10 @@ import { FaRegFolderOpen } from "react-icons/fa";
 
 const Stafflogin = () => {
 
+        const gotoapplyloan = () => {
+    window.location.href = '/apply-loan'
+  }
+
   return (
     <Stafflog>
         <div className="main-stff">
@@ -37,7 +41,7 @@ const Stafflogin = () => {
                 <span className='myicon'><FaRegFolderOpen/></span>
                 <p>Ready to Apply?</p>
                 <span>Start your loan application now. Simple process, quick approval, funds in 24 hours</span>
-                    <button>Start Application <FaArrowRight/></button>
+                    <button onClick={gotoapplyloan}>Start Application <FaArrowRight/></button>
 
                     <div className='icons'>
                         <span><RiSecurePaymentLine/> Secure</span>
