@@ -23,6 +23,10 @@ font-family: var(--font-family);
      font-size: 50px;
     
 }
+.main-aply p{
+ text-align: center;
+    
+}
 
 
 .main-form{
@@ -155,4 +159,56 @@ button{
     font-size: var(--font-size5);
     padding: 10px;
 }
+
+
+
+
+
+
+
+/* -------------------- RESPONSIVE -------------------- */
+  @media (max-width: 1000px) {
+    form {
+      width: 90%;
+      padding: 30px 20px;
+    }
+
+    .Loandetails {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+      padding: 10px 0;
+    }
+
+    .Address {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .myinputclick {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    .Loanype {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .main-aply h1 {
+      font-size: 36px;
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    .checkboxs {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    button {
+      padding: 14px 0;
+      font-size: var(--font-size2);
+    }
+  }
 `

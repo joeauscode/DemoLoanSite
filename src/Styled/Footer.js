@@ -43,13 +43,24 @@ font-family: var( --font-family);
 }
 .inputs {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 4px;
+    background-color: transparent;
+    width: fit-content;
+    border: 1px solid;
+    border-radius: 10px;
 }
+
 .inputs input{
+    width: 100%;
     padding: 10px;
     border: 1px solid lightgray;
+    border: none;
+    outline: none;
     background-color: transparent;
     border-radius: 8px;
+    color: white;
 }
 
 .inputs button svg{
@@ -134,6 +145,77 @@ li{
     justify-content: space-between;
     padding: 10px;
     font-size: var(--font-size5);
+}
+
+.privacy{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.privacy span{
+    cursor: pointer;
+}
+
+
+
+
+
+@media (max-width: 1000px) {
+  .main-footer {
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 15px;
+    align-items: flex-start;
+  }
+
+  .homename {
+    gap: 5px;
+    font-size: 0.9rem;
+  }
+
+  .Empowering {
+    font-size: 0.8rem;
+  }
+
+  .inputs {
+
+    width: 100%;
+    gap: 10px;
+  }
+
+  .inputs input {
+    width: 100%;
+  }
+
+  .homesfirts {
+    gap: 8px;
+  }
+
+  .socialmidia {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  ul {
+    font-size: 0.9rem;
+    gap: 10px;
+  }
+
+  .reserved {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .privacy {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .call, .message, .location {
+    gap: 3px;
+  }
 }
 
 

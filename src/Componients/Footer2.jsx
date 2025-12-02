@@ -11,7 +11,7 @@ import { CiLocationOn } from "react-icons/ci";
 
 import { IoHomeOutline } from "react-icons/io5";
 
-const Footer = () => {
+const Footer2 = () => {
 
     const [email, setEmail] = useState('');
   const [status, setStatus] = useState(''); // success or error message
@@ -53,19 +53,6 @@ const handleSubmit = async (e) => {
      </div>
      <p className='Empowering'>Empowering your financial future</p>
 
-    <form  action='/subscribe.php' className='inputs' method="POST" onSubmit={handleSubmit}>
-      <input
-        type="email"
-        name="subscribe"
-        id="subscribe"
-        placeholder='Your Email'
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        required
-      />
-      <button type="submit" disabled={loading}>{loading ? 'Sending...' : <FiSend />}</button>
-      {status && <p className="status-message">{status}</p>}
-    </form>
      <div className='socialmidia'>
       <span><FaLinkedin/></span>
       <span><BsTwitterX/></span>
@@ -129,4 +116,4 @@ const handleSubmit = async (e) => {
   )
 }
 
-export default Footer
+export default Footer2

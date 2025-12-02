@@ -124,4 +124,67 @@ form span{
     cursor: pointer;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+  .main-stff {
+    flex-direction: column;
+    gap: 20px;
+    width: 95%;
+    padding: 20px 0;
+  }
+
+  .firstdiv,
+  .secondiv {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .firstdiv span:first-child {
+    padding: 8px 12px;
+    font-size: var(--font-size5);
+  }
+
+  .firstdiv p {
+    font-size: var(--font-size2);
+  }
+
+  div input {
+    padding: 12px 14px;
+  }
+
+  form div button,
+  .secondiv button {
+    padding: 12px;
+    font-size: var(--font-size2);
+  }
+
+  .icons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .icons span {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .myicon {
+    padding: 8px 12px;
+    font-size: var(--font-size2);
+  }
+}
+
+
 `

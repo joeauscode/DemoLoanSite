@@ -327,4 +327,109 @@ border-radius: 10px;
   font-size: var(--font-size3);
 }
 
+
+
+
+
+@media (max-width: 1000px) {
+  .section {
+    padding: 4rem 1rem;
+  }
+
+  .trusted {
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px 12px;
+  }
+
+  .trusted span:nth-child(2) {
+    font-size: var(--font-size5);
+  }
+
+  .fast {
+    font-size: 24px;
+    line-height: 40px;
+    margin-top: 0.5rem;
+  }
+
+  .Tailored {
+    gap: 20px;
+    width: 100%;
+  }
+
+  .Tailored p,
+  .Tailored span {
+    font-size: var(--font-size2);
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .buttons button {
+    width: 100%;
+    padding: 15px;
+    font-size: var(--font-size2);
+  }
+
+  .nohiddenfess {
+    flex-direction: column;
+    gap: 15px;
+    font-size: var(--font-size5);
+  }
+
+  .boxex {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .boxex div {
+    width: 100%;
+    padding: 12px;
+    font-size: var(--font-size2);
+  }
+
+  .boxex div span:first-child {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .eligibility {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .imges {
+    width: 100%;
+  }
+
+  .requirmnts p:nth-child(1) {
+    font-size: var(--font-size3);
+  }
+
+  .main-mark {
+    gap: 30px;
+  }
+
+  .markgood {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .markgood span:first-child svg {
+    font-size: 30px;
+  }
+
+  .btn button {
+    width: 100%;
+    font-size: var(--font-size2);
+    padding: 15px 20px;
+  }
+}
+
+
 `

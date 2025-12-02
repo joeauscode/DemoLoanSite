@@ -219,4 +219,74 @@ h4{
     display: flex;
     flex-direction: column;
 }
+
+
+
+
+
+@media (max-width: 1000px) {
+  .calculator {
+    flex-direction: column;
+    gap: 20px;
+    width: 95%;
+    margin: auto;
+  }
+
+  .calculator div:first-child,
+  .total {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .range,
+  .loanterm,
+  .rate-real {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .rate {
+    padding: 5px;
+  }
+
+  .rate button {
+    width: 100%;
+    padding: 8px 0;
+  }
+
+  select,
+  input {
+    width: 100%;
+  }
+
+  .totalain {
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .boxesss {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-sm {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .main-sm div span:nth-child(2) {
+    font-size: var(--font-size6); /* smaller for mobile */
+  }
+
+  .topis h1 {
+    font-size: 24px;
+  }
+
+  .topis span:first-child {
+    font-size: var(--font-size6);
+  }
+}
+
 `

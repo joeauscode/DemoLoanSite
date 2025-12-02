@@ -408,6 +408,85 @@ padding: 50px 20px;
 
 
 
+@media (max-width: 1000px) {
+
+  /* OUR CORE SECTION */
+  .ourcore {
+    width: 100%;
+    padding: 20px 10px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .header span {
+    font-size: var(--font-size3);
+  }
+
+  .header p {
+    font-size: var(--font-size4);
+  }
+
+  .boxsecure {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 0;
+  }
+
+  .boxsecure div {
+    width: 100%;
+    padding: 15px;
+  }
+
+  /* IMPACT SECTION */
+  .Impact {
+    padding: 30px 10px;
+  }
+
+  /* BOXEXHERE */
+  .boxexhere {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 2rem;
+  }
+
+  .boxexhere h1 {
+    font-size: 40px;
+  }
+
+  /* LEADERS SECTION */
+  .leaders {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .leaders div img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  /* READY SECTION */
+  .read-main {
+    padding: 30px 10px;
+  }
+
+  /* BUTTONS */
+  .btns {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btns button {
+    width: 100%;
+    font-size: var(--font-size2);
+    padding: 12px 20px;
+  }
+}
+
+
 
 
 

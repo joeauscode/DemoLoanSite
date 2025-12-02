@@ -22,6 +22,24 @@ import Footer from './Footer'
 
 const Contact = () => {
 
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+  const formData = new FormData(e.target);
+
+  try {
+    const response = await fetch('send-message.php', {
+      method: 'POST',
+      body: formData
+    });
+    const result = await response.json();
+    alert(result.message);
+  } catch (err) {
+    console.error(err);
+    alert('Error sending message.');
+  }
+};
+
+
   return (
     <Contacts>
 <div className="main-contact">
@@ -101,23 +119,23 @@ const Contact = () => {
 
           <div className='inpus'>
             <label htmlFor="">Full Name *</label>
-            <input type="text" name="" id="" placeholder='John Doe'/>
+            <input type="text" name="full_name" id="full_name" placeholder='John Doe' required/>
           </div>
           <div className='inpus'>
             <label htmlFor="">Email Address *</label>
-            <input type="text" name="" id="" placeholder='JohnDoe@example.com'/>
+            <input type="text" name="email" id="email" placeholder='JohnDoe@example.com' required/>
           </div>
           <div className='inpus'>
             <label htmlFor="">Phone Number</label>
-            <input type="text" name="" id="" placeholder='+1 (509) 784-0982'/>
+            <input type="text" name="phone" id="phone" placeholder='+1 (509) 784-0982' required/>
           </div>
           <div className='inpus'>
             <label htmlFor="">Subject *</label>
-            <input type="text" name="" id="" placeholder='Subject'/>
+            <input type="text" name="subject" id="subject" placeholder='Subject' required/>
           </div>
           <div className='inpus'>
             <label htmlFor="">Message * (Max 500 characters)</label>
-            <textarea className='textrea' name="" id="" placeholder='Tell us how we can help'></textarea>
+            <textarea className='textrea' name="message" id="message" placeholder='Tell us how we can help' required></textarea>
             <span>0/500 characters</span>
           </div>
           <div className='inpus'>
@@ -142,7 +160,7 @@ const Contact = () => {
 
 
 <div className="maps">
-    <iframe src="https://www.google.com/maps/embed?pb=!4v1764606520564!6m8!1m7!1sOlb_SLEypv6xwo9dMM7Niw!2m2!1d38.782174036539374!2d-76.89898934739094!3f342.38138!4f0!5f0.7820865974627469"
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.8366476909655!2d-79.38364762465945!3d43.65156685253786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34ccd82c0fad%3A0xa61cb481ab390be5!2s401%20Bay%20St.%2016th%20floor%2C%20Toronto%2C%20ON%20M5H%202Y4%2C%20Canada!5e0!3m2!1sen!2sng!4v1764676229398!5m2!1sen!2sng"
      width="100%" 
      height="450" 
      style={{border: '0'}} 
