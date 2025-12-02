@@ -83,9 +83,9 @@ const Contact = () => {
            <span className='iconss'><CiLocationOn/></span>
             <div className='itmes'>
                 <span>Office Address</span>
-                <span>123 Financial Street</span>
-                <span>New York, NY 10001</span>
-                <span>United States</span>
+                <span>401 Bay St. 16th floor</span>
+                <span>Toronto, ON M5H 2Y4</span>
+                <span>Canada</span>
             </div>
           </div>
 
