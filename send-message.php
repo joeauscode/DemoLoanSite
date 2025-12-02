@@ -23,17 +23,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $mail = new PHPMailer(true);
 
     try {
-        // SMTP configuration
         $mail->isSMTP();
-        $mail->Host       = 'smtp.example.com'; // Your SMTP server
-        $mail->SMTPAuth   = true;
-        $mail->Username   = 'your_email@example.com';
-        $mail->Password   = 'your_email_password';
-        $mail->SMTPSecure = 'tls';
-        $mail->Port       = 587;
-
+        $mail->Host = 'smtp.hostinger.com';      
+        $mail->SMTPAuth = true;
+        $mail->Username = 'support@eloanhub.com'; 
+        $mail->Password = '#Pp@EWtD8';        
+        $mail->SMTPSecure = 'tls';                
+        $mail->Port = 587; 
+        
         // Sender & recipient
-        $mail->setFrom($email, $full_name);
+        $mail->setFrom('support@eloanhub.com', 'eLoanHub');
+        $mail->addReplyTo($email, $full_name);
         $mail->addAddress('loans@company.com', 'Company');
 
         // Email content

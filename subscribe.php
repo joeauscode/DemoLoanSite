@@ -22,18 +22,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     try {
         $mail = new PHPMailer(true);
         $mail->isSMTP();
-        $mail->Host = 'smtp.example.com';       
+        $mail->Host = 'smtp.hostinger.com';      
         $mail->SMTPAuth = true;
-        $mail->Username = 'your_email@example.com'; 
-        $mail->Password = 'your_password';        
-        $mail->SMTPSecure = 'tls';                 
-        $mail->Port = 587;                         
+        $mail->Username = 'support@eloanhub.com'; 
+        $mail->Password = '#Pp@EWtD8';        
+        $mail->SMTPSecure = 'tls';                
+        $mail->Port = 587; 
 
-        // Send to company
-        $mail->setFrom('your_email@example.com', 'Your Company');
+        $mail->setFrom('support@eloanhub.com', 'eLoanHub');
         $mail->addAddress($company_email);
         $mail->Subject = $subject;
         $mail->Body = $message;
+        $mail->isHTML(false); // plain text
         $mail->send();
 
         echo json_encode(['status' => 'success', 'message' => 'Subscription successful.']);
