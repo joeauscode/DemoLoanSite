@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {Navbar} from '../Styled/Nav'
 import { IoHomeOutline } from "react-icons/io5";
 import { RiMenu3Fill } from "react-icons/ri";
@@ -7,6 +7,11 @@ import { RiMenu3Fill } from "react-icons/ri";
 
 const Nav = () => {
 
+  const [dropdownhere, setDropdownhere] = useState(false)
+
+  const dropmenu = () => {
+    setDropdownhere(prev => !prev)
+  }
 
   const Gotoabout = () => {
     window.location.href = '/about-us'
@@ -34,7 +39,7 @@ const Nav = () => {
             <span>eLoanHub</span>
         </div>
 
-        <div className="menu">
+        <div className="menu" onClick={dropmenu}>
           <RiMenu3Fill/>
         </div>
       
@@ -47,6 +52,19 @@ const Nav = () => {
             </ul>
      
         </div>
+        
+        {dropdownhere &&(
+              <div className="mobiles">
+                  <ul className="mobiless">
+                <li onClick={Gotohome}>Home</li>
+                <li onClick={Gotoabout}>About Us</li>
+                <li onClick={Gotoservers}>Services</li>
+                <li onClick={Gotocontact}>Contact</li>
+                <li onClick={Gotoapply}><button>Apply Now</button></li>
+            </ul>
+        </div>
+        )}
+  
 
     </Navbar>
   )

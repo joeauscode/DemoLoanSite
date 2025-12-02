@@ -6,6 +6,10 @@ export const Navbar = styled.main`
 .menu{
     display: none;
 }
+
+.mobiles{
+    display: none;
+}
 position: fixed;
 width: 100%;
 padding: 20px 0px;
@@ -96,6 +100,27 @@ svg{
 }
 .right{
     display: none;
+}
+
+
+
+.mobiles{
+    display: flex;
+ background-color: var( --background-color1);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.mobiless{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+
 }
 
 }
