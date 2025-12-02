@@ -137,7 +137,7 @@ form span{
 
 
 
-@media (max-width: 1000px) {
+@media (max-width: 850px) {
   .main-stff {
     flex-direction: column;
     gap: 20px;

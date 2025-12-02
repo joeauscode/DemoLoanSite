@@ -1,6 +1,8 @@
 import React from 'react'
 import {Navbar} from '../Styled/Nav'
 import { IoHomeOutline } from "react-icons/io5";
+import { RiMenu3Fill } from "react-icons/ri";
+
 
 
 const Nav = () => {
@@ -30,6 +32,10 @@ const Nav = () => {
         <div className="left" onClick={Gotohome}>
             <span><IoHomeOutline/></span>
             <span>eLoanHub</span>
+        </div>
+
+        <div className="menu">
+          <RiMenu3Fill/>
         </div>
       
             <ul className="right">

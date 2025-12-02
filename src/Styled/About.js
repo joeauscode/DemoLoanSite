@@ -352,7 +352,7 @@ padding: 50px 20px;
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 850px) {
   .main-about {
     padding: 30px 15px;
   }
@@ -373,7 +373,7 @@ padding: 50px 20px;
 
 
 
-@media (max-width: 1000px) {
+@media (max-width: 850px) {
   .ourmission {
     flex-direction: column;
     gap: 20px;
@@ -389,7 +389,7 @@ padding: 50px 20px;
 
 
 /* MOBILE RESPONSIVENESS */
-@media (max-width: 1000px) {
+@media (max-width: 850px) {
   .ourstory {
     flex-direction: column;
     padding: 40px 5%;
@@ -408,7 +408,7 @@ padding: 50px 20px;
 
 
 
-@media (max-width: 1000px) {
+@media (max-width: 850px) {
 
   /* OUR CORE SECTION */
   .ourcore {

@@ -3,6 +3,9 @@ import styled from "styled-components";
 
 
 export const Navbar = styled.main`
+.menu{
+    display: none;
+}
 position: fixed;
 width: 100%;
 padding: 20px 0px;
@@ -76,5 +79,25 @@ button:hover{
     background-color: var(--background-hover);
 }
 
+
+
+
+@media screen and (max-width: 850px) {
+    .menu{
+    display: block;
+    font-size: 30px;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+svg{
+    display: block;
+}
+.right{
+    display: none;
+}
+
+}
 
 `

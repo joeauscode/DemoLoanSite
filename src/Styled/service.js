@@ -325,7 +325,7 @@ button{
 
 
 
-@media (max-width: 1000px) {
+@media (max-width: 850px) {
 
   /* General container adjustments */
   .services, .perfect, .personalloan, .ComparE {

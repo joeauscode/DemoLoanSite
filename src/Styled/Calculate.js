@@ -224,7 +224,7 @@ h4{
 
 
 
-@media (max-width: 1000px) {
+@media (max-width: 850px) {
   .calculator {
     flex-direction: column;
     gap: 20px;

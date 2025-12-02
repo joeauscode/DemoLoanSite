@@ -167,7 +167,7 @@ button{
 
 
 /* -------------------- RESPONSIVE -------------------- */
-  @media (max-width: 1000px) {
+  @media (max-width: 850px) {
     form {
       width: 90%;
       padding: 30px 20px;

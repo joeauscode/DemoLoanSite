@@ -161,7 +161,7 @@ li{
 
 
 
-@media (max-width: 1000px) {
+@media (max-width: 850px) {
   .main-footer {
     flex-direction: column;
     gap: 30px;

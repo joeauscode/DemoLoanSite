@@ -331,7 +331,7 @@ border-radius: 10px;
 
 
 
-@media (max-width: 1000px) {
+@media (max-width: 850px) {
   .section {
     padding: 4rem 1rem;
   }
