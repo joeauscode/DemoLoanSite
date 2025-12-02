@@ -19,7 +19,7 @@ import Mortgage from '../assets/images/mortgage.jpg';
 import investment from '../assets/images/investment.jpg';
 
 // Components
-import Footer from './Footer';
+import Footer2 from './Footer2';
 
 
 
@@ -419,7 +419,7 @@ const Service = () => {
 
 
 
-<Footer/>
+<Footer2/>
     </Services>
   )
 }

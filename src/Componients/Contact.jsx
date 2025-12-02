@@ -7,7 +7,7 @@ import { MdOutlineAccessTime } from "react-icons/md";
 import { FaLinkedin, FaFacebook,FaInstagram } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { LuSend } from "react-icons/lu";
-import Footer from './Footer'
+import Footer2 from './Footer2'
 
 
 
@@ -203,7 +203,7 @@ const Contact = () => {
 </div>
 </div>
 
-<Footer/>
+<Footer2/>
         
     </Contacts>
   )
