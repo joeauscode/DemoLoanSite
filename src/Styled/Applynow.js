@@ -177,7 +177,8 @@ button{
       flex-direction: column;
       align-items: flex-start;
       gap: 5px;
-      padding: 10px 0;
+      padding: 20px 0;
+
     }
 
     .Address {
@@ -186,8 +187,9 @@ button{
     }
 
     .myinputclick {
-      width: 100%;
-      flex-wrap: wrap;
+      display: flex;
+      flex-direction: row;
+    
     }
 
     .Loanype {
@@ -201,9 +203,8 @@ button{
       text-align: center;
     }
 
-    .checkboxs {
-      flex-direction: column;
-      align-items: flex-start;
+    .checkboxs p{
+      font-size: 10px;
     }
 
     button {

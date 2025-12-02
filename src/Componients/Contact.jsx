@@ -112,7 +112,7 @@ const Contact = () => {
          </div>
 
 
-         <form action="">
+         <form action="" onSubmit={handleSubmit}>
           <div className='headerform'>
             <h1>Send Us a Message</h1>
           </div>

@@ -191,4 +191,71 @@ padding: 50px 0px;
 }
 
 
+
+
+@media (max-width: 850px) {
+
+  .main-contact{
+    padding: 70px 0px;
+    
+  }
+
+  .main-contact h1{
+    margin-top: 2rem;
+    font-size: 34px;
+  }
+
+  .main-contact p{
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .contsform{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .theboes{
+    padding: 10px 0px;
+  }
+
+  .mylables{
+    gap: 10px;
+  }
+
+  .socialmedia div{
+    justify-content: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  form{
+    padding: 10px 15px;
+  }
+
+  .headerform{
+    text-align: center;
+  }
+
+  input,
+  .textrea{
+    font-size: var(--font-size4);
+  }
+
+  .inpus button{
+    font-size: var(--font-size4);
+    padding: 12px 15px;
+  }
+
+  .fresquentquestions{
+    padding: 30px 10px;
+  }
+
+  .ask div{
+    padding: 15px;
+  }
+
+}
+
+
 `
