@@ -137,9 +137,7 @@ const openPicker = () => {
 <div className='Loanype'>
     <div className='LoanType'>
     <label htmlFor="">Date of Birth *</label>
-    <div className="LoanType">
-  <label>Date of Birth *</label>
-<input
+   <input
   type="date"
   name="dob"
   id="dob"
@@ -147,10 +145,6 @@ const openPicker = () => {
 
   required
 />
-
-
-</div>
-
 </div>
 <div className='LoanType'>
     <label htmlFor="">ID Number *</label>
