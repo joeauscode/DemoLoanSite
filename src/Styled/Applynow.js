@@ -161,6 +161,21 @@ button{
 }
 
 
+.success-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: var(--smoke-color);
+  background-color: var(--background-color1);
+  z-index: 9999; 
+}
 
 
 
@@ -206,5 +221,15 @@ button{
       padding: 14px 0;
       font-size: var(--font-size2);
     }
+
+
+
+
+    .success-message{
+      width: fit-content;
+      text-align: center;
+
+}
+
   }
 `

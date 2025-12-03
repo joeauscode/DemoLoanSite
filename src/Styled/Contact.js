@@ -191,6 +191,24 @@ padding: 50px 0px;
 }
 
 
+.success-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: var(--smoke-color);
+  background-color: var(--background-color1);
+  z-index: 9999; 
+}
+
+
+
 
 
 @media (max-width: 850px) {
@@ -253,6 +271,12 @@ padding: 50px 0px;
 
   .ask div{
     padding: 15px;
+  }
+
+
+  .success-message{
+    width: fit-content;
+    text-align: center;
   }
 
 }

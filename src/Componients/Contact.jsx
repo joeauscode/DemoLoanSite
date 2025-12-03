@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {Contacts} from '../Styled/Contact'
 import { MdAddIcCall } from "react-icons/md";
 import { FaRegEnvelope } from "react-icons/fa6";
@@ -22,26 +22,50 @@ import Footer2 from './Footer2'
 
 const Contact = () => {
 
-  const handleSubmit = async (e) => {
+  const [successfully, setSuccessfully] = useState(false)
+  
+ const handleSubmit = async (e) => {
   e.preventDefault();
+
   const formData = new FormData(e.target);
 
   try {
-    const response = await fetch('send-message.php', {
+    const response = await fetch('http://127.0.0.1:8000/send-contact/', {
       method: 'POST',
       body: formData
     });
+
     const result = await response.json();
-    alert(result.message);
+
+    if (result.status === "success") {
+  setSuccessfully(true);  
+  e.target.reset();       
+  setTimeout(() => setSuccessfully(false), 4000);
+      
+     
+    } else {
+      setSuccessfully(result.message);
+      setTimeout(() => {
+        setSuccessfully(false)
+        window.location.href='/'
+      }, 5000);
+      
+    }
   } catch (err) {
     console.error(err);
     alert('Error sending message.');
+   
   }
 };
 
 
+
+
   return (
     <Contacts>
+     
+      
+
 <div className="main-contact">
 <h1>Get in Touch</h1>
 <p>Have questions? We're here to help. Reach out to our team and we'll get back to you within 24 hours.</p>
@@ -110,6 +134,12 @@ const Contact = () => {
           </div>
 
          </div>
+         
+         {successfully &&(
+            <div  className="success-message">
+            <p>Message sent successfully!</p>
+        </div>
+         )}
 
 
          <form action="" onSubmit={handleSubmit}>
@@ -160,14 +190,15 @@ const Contact = () => {
 
 
 <div className="maps">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.8366476909655!2d-79.38364762465945!3d43.65156685253786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34ccd82c0fad%3A0xa61cb481ab390be5!2s401%20Bay%20St.%2016th%20floor%2C%20Toronto%2C%20ON%20M5H%202Y4%2C%20Canada!5e0!3m2!1sen!2sng!4v1764676229398!5m2!1sen!2sng"
-     width="100%" 
-     height="450" 
-     style={{border: '0'}} 
-     allowfullscreen="" 
-     loading="lazy" 
-     referrerpolicy="no-referrer-when-downgrade">
-     </iframe>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.8366476909655!2d-79.38364762465945!3d43.65156685253786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34ccd82c0fad%3A0xa61cb481ab390be5!2s401%20Bay%20St.%2016th%20floor%2C%20Toronto%2C%20ON%20M5H%202Y4%2C%20Canada!5e0!3m2!1sen!2sng!4v1764676229398!5m2!1sen!2sng"
+    width="100%"
+    height="450"
+    style={{ border: 0 }}
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  ></iframe>
 </div>
 
 

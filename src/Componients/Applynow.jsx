@@ -14,19 +14,37 @@ import { CgAdd } from "react-icons/cg";
 const Applynow = () => {
 
 
-  const [coApplicant, setCoApplicant] = useState(''); // 'Yes' or 'No'
+  const [coApplicant, setCoApplicant] = useState(''); 
+  const [successfully, setSuccessfully] = useState(false)
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const formData = new FormData(e.target);
-    fetch('/send-application.php', {
-      method: 'POST',
-      body: formData
-    })
-    .then(res => res.json())
-    .then(data => alert(data.message))
-    .catch(err => console.error(err));
-  };
+ 
+  
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  const formData = new FormData(e.target);
+  const data = {};
+  formData.forEach((value, key) => { data[key] = value; });
+  console.log("Submitting:", data); // debug
+
+  try {
+    const response = await fetch("http://127.0.0.1:8000/send-application/", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+    const result = await response.json();
+    setSuccessfully(true);
+    setSuccessfully(result.message);
+    setTimeout(() => {
+    setSuccessfully(false);
+    window.location.href='/'
+    }, 4000);
+    if (result.status === "success") e.target.reset();
+  } catch (err) {
+    console.error(err);
+    alert("Failed to submit application");
+  }
+};
 
 
 
@@ -46,7 +64,14 @@ const Applynow = () => {
 </div>
 
 
+         {successfully &&(
+            <div  className="success-message">
+            <p>Application submitted successfully!</p>
+        </div>
+         )}
+
 <div className="main-form">
+
 
 <form action="/send-application.php" onSubmit={handleSubmit}>
 <div className='Loandetails'>
@@ -102,7 +127,7 @@ const Applynow = () => {
 </div>
 <div className='LoanType'>
     <label htmlFor="">Last Name *</label>
-    <input type="text" name="last_name" id='last_name ' placeholder="Doe" required/>
+   <input type="text" name="last_name" id='last_name' placeholder="Doe" required/>
 </div>
 </div>
 <div className='Loanype'>
@@ -196,12 +221,27 @@ const Applynow = () => {
 <div className="Additional">
     <div className='Additionalru'>
         <label htmlFor="Do you have a co-applicant? *">Do you have a co-applicant? *</label>
-        <div className='myinputclick'>
-        <span>Yes</span>
-<input type="radio" checked={coApplicant === 'Yes'}  name="co_applicant" value="Yes" onChange={() => setCoApplicant('Yes')} required />
-<span>No</span>
-<input type="radio" checked={coApplicant === 'No'}  name="co_applicant" value="No" onChange={() => setCoApplicant('No')} required />         
-        </div>
+ <div className='myinputclick'>
+  <span>Yes</span>
+  <input
+    type="radio"
+    name="co_applicant"
+    value="Yes"
+    checked={coApplicant === 'Yes'}
+    onChange={() => setCoApplicant('Yes')}
+    required
+  />
+  <span>No</span>
+  <input
+    type="radio"
+    name="co_applicant"
+    value="No"
+    checked={coApplicant === 'No'}
+    onChange={() => setCoApplicant('No')}
+    required
+  />
+</div>
+
 
         <div className='checkboxs'>
             <div>
