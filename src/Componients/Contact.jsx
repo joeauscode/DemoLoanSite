@@ -30,7 +30,7 @@ const Contact = () => {
   const formData = new FormData(e.target);
 
   try {
-    const response = await fetch('http://127.0.0.1:8000/send-contact/', {
+    const response = await fetch('127.0.0.1:8000/send-contact/', {
       method: 'POST',
       body: formData
     });
@@ -210,7 +210,7 @@ const Contact = () => {
 <div className="ask">
 
     <div>
-    <p>How long does the approval process take?</p>
+    <p >How long does the approval process take?</p>
     <span>Most applications are reviewed within 24-48 hours. Once approved, funds can be disbursed within 1-3 business days depending on the loan type.
 
 </span>

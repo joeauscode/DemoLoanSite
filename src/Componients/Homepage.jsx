@@ -1,4 +1,4 @@
-import React, {useRef } from 'react'
+import React, {useRef, useEffect  } from 'react'
 import {Home} from '../Styled/Homepage'
 import { RiSecurePaymentLine } from "react-icons/ri";
 import { FaArrowRight, FaChartLine } from "react-icons/fa6";
@@ -12,6 +12,8 @@ import { GrStatusGood } from "react-icons/gr";
 import Calculate from './Calculate'
 import Stafflogin from './Stafflogin'
 import Footer from './Footer'
+import { useNavigate } from 'react-router-dom';
+
 
 
 
@@ -24,6 +26,7 @@ import Footer from './Footer'
 
 
 const Homepage = () => {
+   const navigate = useNavigate();
   const calculateRef = useRef(null);
 
   const scrollToCalculate = () => {
@@ -35,6 +38,12 @@ const Homepage = () => {
 
     const gotoapplyloan = () => {
     window.location.href = '/apply-loan'
+  }
+
+
+
+  const Gotopersonalloan = () => {
+  navigate('/ourservice')
   }
 
  
@@ -88,25 +97,25 @@ const Homepage = () => {
                 <span style={{backgroundColor: '#ff7e7e'}}><CiWallet /></span>
                 <p>Personal Loan</p>
                 <span>Quick funds for weddings, medical emergencies, or debt consolidation. Amounts from $1,000 to $50,000</span>
-                <a href="">Learn More <FaArrowRight/></a>
+                <a href="#" onClick={Gotopersonalloan}>Learn More <FaArrowRight/></a>
                 </div>
                 <div>
                 <span style={{backgroundColor: '#384762'}}><BiSolidBusiness /></span>
                 <p>Business Loan</p>
                 <span>Fuel your business growth with flexible financing for expansion, equipment, and working capital. $5,000 to $500,000</span>
-                <a href="">Learn More <FaArrowRight/></a>
+                <a href="#" onClick={Gotopersonalloan}>Learn More <FaArrowRight/></a>
                 </div>
                 <div>
                 <span style={{backgroundColor: '#12b996'}}><FaArrowAltCircleUp /></span>
                 <p>Mortgage Loan</p>
                 <span>Make your dream home a reality with competitive mortgage rates and flexible terms. $50,000 to $2,000,000</span>
-                <a href="">Learn More <FaArrowRight/></a>
+                <a href="#" onClick={Gotopersonalloan}>Learn More <FaArrowRight/></a>
                 </div>
                 <div>
                 <span style={{backgroundColor: '#966ef7'}}><FaChartLine/></span>
                 <p>Investment Loan</p>
                 <span>Grow your wealth with property investment and portfolio expansion financing. $25,000 to $1,000,000</span>
-                <a href="">Learn More <FaArrowRight/></a>
+                <a href="#" onClick={Gotopersonalloan}>Learn More <FaArrowRight/></a>
                 </div>
              </div>
         </div>

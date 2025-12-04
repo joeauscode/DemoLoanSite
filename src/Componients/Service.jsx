@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { Services } from '../Styled/service';
 
 // React icons
@@ -17,7 +17,7 @@ import personalloan from '../assets/images/personalLoan.jpg';
 import businessloan from '../assets/images/businessloan.jpg';
 import Mortgage from '../assets/images/mortgage.jpg';
 import investment from '../assets/images/investment.jpg';
-
+import { useLocation } from "react-router-dom";
 // Components
 import Footer2 from './Footer2';
 
@@ -35,9 +35,13 @@ import Footer2 from './Footer2';
 
 const Service = () => {
 
+
+
     const Gotoapply = () => {
     window.location.href = '/apply-loan'
   }
+
+
 
   return (
 
@@ -53,7 +57,7 @@ const Service = () => {
     <span className='CiWallet'><CiWallet/></span>
     <span>Personal Loan</span>
   </div>
-    <div className='personalloan'>
+    <div className='personalloan' id='personalloan'>
       <h1>Personal Loans for Life's Important Moments</h1>
     <p>Whether you're planning a wedding, facing medical expenses, consolidating debt, or funding a dream vacation, our personal loans provide the financial flexibility you need. With competitive rates and flexible repayment terms, we make it easy to access funds quickly.</p>
       
@@ -122,10 +126,10 @@ const Service = () => {
 
 
  
-<div className="mainjects">
+<div className="mainjects" id='Businesslaodere'>
   <div className="services">
 
-    <div className="businessimage">
+    <div className="businessimage" >
     <img src={businessloan} alt="businessloan" />
   </div>
 

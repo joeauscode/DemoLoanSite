@@ -27,7 +27,7 @@ const handleSubmit = async (e) => {
   console.log("Submitting:", data); // debug
 
   try {
-    const response = await fetch("http://127.0.0.1:8000/send-application/", {
+    const response = await fetch("127.0.0.1:8000/send-application/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),

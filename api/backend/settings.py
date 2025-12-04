@@ -114,26 +114,17 @@ STATIC_URL = 'static/'
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.hostinger.com'
+EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 465
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True
-EMAIL_HOST_USER = 'support@eloanhub.com'
-EMAIL_HOST_PASSWORD = '#Pp@EWtD8'
-DEFAULT_FROM_EMAIL = 'eLoanHub <support@eloanhub.com>'
-ADMIN_EMAIL = 'support@eloanhub.com'
+EMAIL_HOST_USER = 'support@test.com'
+EMAIL_HOST_PASSWORD = '383983893'
+DEFAULT_FROM_EMAIL = 'eLoanHub <support@test.com>'
+ADMIN_EMAIL = 'support@test.com'
 
 
 
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_PORT = 465  
-# ADMIN_EMAIL = 'support@eloanhub.com'
-# EMAIL_USE_TLS = False  
-# EMAIL_USE_SSL = True  
-# EMAIL_HOST_USER = 'eguloyas3@gmail.com'
-# EMAIL_HOST_PASSWORD = 'yvtszsvjewpqayuv'
-# DEFAULT_FROM_EMAIL = 'Shiparamax Logistics <eguloyas3@gmail.com>'
 
 
 

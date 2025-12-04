@@ -166,7 +166,7 @@ const Footer = () => {
     setStatus('');
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/subscribe/', {
+      const response = await fetch('127.0.0.1:8000/subscribe/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
